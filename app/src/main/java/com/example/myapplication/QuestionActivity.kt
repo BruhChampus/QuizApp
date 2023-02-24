@@ -207,6 +207,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
         intent.putExtra(Constants.USER_NAME, mUserName)
         intent.putExtra(Constants.SCORE, mScore)
         intent.putExtra(Constants.TIME, cTime.text.toString())
+        intent.putExtra(Constants.QUESTIONS_QUANTITY, mQuestionsQuantity)
         startActivity(intent)
         finish()
     }

@@ -8,14 +8,9 @@ object Constants {
     const val TIME: String = "time"
 
 
-    fun getQuestions(amount:Int): ArrayList<Question> {
+    fun getQuestions(amount: Int): ArrayList<Question> {
         val questionsList: ArrayList<Question> = ArrayList()
         val finalQuestionsList: ArrayList<Question> = ArrayList()
-
-
-
-
-
 
 
         // 1
@@ -31,9 +26,9 @@ object Constants {
         // 2
         val que2 = Question(
             2, "What color is this?",
-            R.drawable.ic_pink_color,
-            "Brown", "Green",
-            "Pink", "Yellow", 3
+            R.drawable.ic_blue_color,
+            "Blue", "Green",
+            "Pink", "Yellow", 1
         )
 
         questionsList.add(que2)
@@ -41,9 +36,9 @@ object Constants {
         // 3
         val que3 = Question(
             3, "What color is this?",
-            R.drawable.ic_pink_color,
+            R.drawable.ic_gray_color,
             "Brown", "Green",
-            "Pink", "Yellow", 3
+            "Gray", "Yellow", 3
         )
 
         questionsList.add(que3)
@@ -61,9 +56,9 @@ object Constants {
         // 5
         val que5 = Question(
             5, "What color is this?",
-            R.drawable.ic_pink_color,
-            "Brown", "Green",
-            "Pink", "Yellow", 3
+            R.drawable.ic_red_color,
+            "White", "Red",
+            "Black", "Yellow", 2
         )
 
         questionsList.add(que5)
@@ -71,9 +66,9 @@ object Constants {
         // 6
         val que6 = Question(
             6, "What color is this?",
-            R.drawable.ic_pink_color,
-            "Brown", "Green",
-            "Pink", "Yellow", 3
+            R.drawable.ic_yellow_color,
+            "Brown", "Orange",
+            "Teal", "Yellow", 4
         )
 
         questionsList.add(que6)
@@ -119,12 +114,10 @@ object Constants {
         questionsList.add(que10)
 
         questionsList.shuffle()
-          for(i in 0..amount-1){
-              finalQuestionsList.add(questionsList.elementAt(i))
-          }
-
+        for (i in 0..amount - 1) {
+            finalQuestionsList.add(questionsList.elementAt(i))
+        }
 
         return finalQuestionsList
     }
-    // END
-    }
+}

@@ -64,7 +64,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white_light_gray"
-                    android:hint="@string/e_g_john"
+                    android:hint="@string/e_g_mari"
                     android:inputType="textCapWords"
                     android:textColor="@color/black_blue"
                     android:textColorHint="@color/light_dark_blue" />
